@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>HerbaFresh | Starting Business Marketing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>Starting Business Marketing - HerbaFresh</h2>
+</header>
+
+<!-- HALAMAN LOGIN -->
+<div class="container login-box" id="loginPage">
+    <div class="card">
+        <h3>Login</h3>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <p id="loginError" class="error"></p>
+    </div>
+</div>
+
+<!-- HALAMAN UTAMA -->
+<div class="container hidden" id="homePage">
+
+    <div class="card">
+        <h3>Penentuan Masalah</h3>
+        <p>
+            Pelaku usaha pemula sering mengalami kesulitan dalam memasarkan produk
+            secara digital karena tidak memiliki media online yang sederhana dan aman.
+            Oleh karena itu, dibuat website ini untuk membantu promosi produk HerbaFresh.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Menyusun Algoritma</h3>
+        <ol>
+            <li>Pengguna membuka website</li>
+            <li>Pengguna melakukan login</li>
+            <li>Sistem memverifikasi akun</li>
+            <li>Pengguna masuk ke halaman utama</li>
+            <li>Pengguna mengunggah gambar produk</li>
+            <li>Sistem menampilkan gambar produk</li>
+        </ol>
+    </div>
+
+    <div class="card">
+        <h3>Flowchart (Deskripsi)</h3>
+        <p>
+            Mulai → Login → Validasi Login → Halaman Utama →
+            Upload Gambar Produk → Tampilkan Produk → Selesai
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Upload Gambar Produk HerbaFresh</h3>
+        <input type="file" id="imageInput" accept="image/*">
+        <button onclick="uploadImage()">Upload Produk</button>
+        <div id="productGallery"></div>
+    </div>
+
+    <button class="logout" onclick="logout()">Logout</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
